@@ -7,13 +7,14 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "project-build":"node build/build.js &",
-    "cordova-run":"cordova run android &",
+    "project-build": "node build/build.js &",
+    "cordova-run": "cordova run android &",
     "build": "npm run project-build && npm run cordova-run"
   },
   "dependencies": {
     "axios": "0.18.0",
     "fastclick": "1.0.6",
+    "hoek": "^5.0.3",
     "qs": "6.5.2",
     "vconsole": "3.2.0",
     "vue": "2.5.2",
