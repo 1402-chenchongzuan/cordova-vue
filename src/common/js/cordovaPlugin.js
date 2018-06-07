@@ -11,7 +11,6 @@ export function Photograph(){
   let promise=new Promise((resolve,reject)=>{
     navigator.camera.getPicture((data)=>{
       resolve(data);
-      this.imgUrl=data;
     },(err)=>{    //err===20时为无相机权限
      reject(err);
     },options)
